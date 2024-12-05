@@ -78,13 +78,11 @@ The main model used is a `random forest classifier`, adjusted adjusted using a `
         * This parameter tests wether a weight is need for classes which are less present are not overlooked by the model. 
         * In our case we have several variables that have very few positive observations in the training data, and these may need to have a higher weight assigned to them.
 
-
 - For improved optimization further parameter testing is adviced.
 
 ### Assessment
 - The model has been assessed using precision, recal and f1-score for each separate class.
 The overall assessment is that the model still needs improving and training, **especially when locking at recall for classes where there are few positive observations in the training data**.
-
 
 ## Usage
 
@@ -162,3 +160,9 @@ https://medium.com/analytics-vidhya/optimize-hyperparameters-with-gridsearch-d35
 
 Lemmatization
 https://www.geeksforgeeks.org/python-lemmatization-approaches-with-examples/
+
+Language assessment
+https://medium.com/@monigrancharov/text-language-detection-with-python-beb49d9667b3
+https://langcodes-hickford.readthedocs.io/en/sphinx/index.html
+
+
