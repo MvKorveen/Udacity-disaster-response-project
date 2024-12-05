@@ -1,5 +1,23 @@
 # Disaster Response Pipeline Project
 
+1. [Introduction](#introduction)
+2. [Project Structure](#project-structure)
+3. [Data](#data)
+4. [Model Details](#model-details)
+   - 4.1 [Preprocessing](#preprocessing)
+   - 4.2 [Model Build](#model-build)
+     - 4.2.1 [Model Description](#model-description)
+     - 4.2.2 [Pipeline](#pipeline)
+     - 4.2.3 [GridSearch](#gridsearch)
+   - 4.3 [Assessment](#assessment)
+5. [Usage](#usage)
+   - 5.1 [Installation](#installation)
+   - 5.2 [Initiate Model](#initiate-model)
+   - 5.3 [Web App](#web-app)
+6. [Further Development](#further-development)
+7. [Acknowledgments](#acknowledgments)
+8. [Additional Sources](#additional-sources)
+
 ## Introduction
 The Disaster Response Project uses a machine learning pipeline to categorize messages received during disaster events into appropriate categories in order for organizations to direct resources and responses.
 
@@ -68,7 +86,9 @@ The main model used is a `random forest classifier`, adjusted adjusted using a `
 The overall assessment is that the model still needs improving and training, **especially when locking at recall for classes where there are few positive observations in the training data**.
 
 
-## Installation
+## Usage
+
+### Installation
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/disaster-response-project.git
@@ -82,7 +102,7 @@ The overall assessment is that the model still needs improving and training, **e
    poetry install
    ```
 
-## Usage
+### Initiate model 
 1. Navigate to the project directory:
    ```bash
    cd disaster-response-project
@@ -107,6 +127,24 @@ The overall assessment is that the model still needs improving and training, **e
     ```bash
     http://0.0.0.0:3001/
     ```
+
+### Web app
+- The app has two main functions. 
+
+1. **Text categorization** - For categorizing a text message, enter the message in the `Enter to classify` field and push the `Classify Message` button. The selected text classifiers will appear below the under the Result text.
+
+    - E.g. if you text "we are starving and are also lacking both drinking water and medicine" the categories "Related", "Aid Related" and "Water" will appear.
+
+2. **Training data distribution** - If you follow the link that says `Training data distribution` this will take you to a set of graphs showing the distribution.
+- The first graph shows the overall distribution of the type of texts used by the model, direct messages, news and social media inputs.
+- The second two graphs shows the distribtion of the direct messages, since these are the ones to be classified in the end.
+    - The first of these shows the distribution of languages used. This could be used further for classification modeling in the future.
+    - The second distribution shows how large a share of all messages that has had a positive observation in any of the categories.
+
+## Further development
+The results are still highly unbalanced and need further improvements too handle the many categories that are under represented.
+
+Beyond the actual improvment of the NLP modell, one such action could be to look over the categories themselves and group them in accordance to the actions needed to be taken within them. This could also help with the balance problem.
 
 ## Acknowledgments
 - [Udacity](https://www.udacity.com/) for providing the course content.
