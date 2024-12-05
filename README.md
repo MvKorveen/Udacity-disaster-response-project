@@ -25,7 +25,7 @@ The Disaster Response Project uses a machine learning pipeline to categorize mes
 ```
 ├── app/
 │   ├── templates/       # HTML code for the web app
-│   └── run.py           # Flask app script and graph setup
+│   └── run.py           # Web app script and graph setup
 │   
 │
 ├── data/
