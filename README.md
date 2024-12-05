@@ -89,13 +89,9 @@ The overall assessment is that the model still needs improving and training, **e
 ### Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/disaster-response-project.git
+   git clone https://github.com/MvKorveen/Udacity-disaster-response-project.git
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd disaster-response-project
-   ```
-3. Install the required Python dependencies (if using poetry) by running the command:
+2. Install the required Python dependencies (if using poetry) by running the command:
    ```bash
    poetry install
    ```
