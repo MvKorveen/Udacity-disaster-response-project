@@ -43,8 +43,8 @@ The Disaster Response Project uses a machine learning pipeline to categorize mes
 ## Data
 The data used in this project is sourced from disaster response messages provided by [Figure Eight](https://www.figure-eight.com/). The dataset includes:
 
-- **Messages**: Text messages in multiple languages.
-- **Labels**: 36 categories indicating the type of aid needed.
+- **Messages**: Text messages containing both direct messages (both in original language and translated to english), new texts and social media posts. These will be used to train the data.
+- **Labels**: 36 categories indicating the type of aid needed. These will be the categories the model will predict.
 
 ## Model Details
 
