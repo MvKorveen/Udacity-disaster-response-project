@@ -129,17 +129,23 @@ The overall assessment is that the model still needs improving and training, **e
     ```
 
 ### Web app
-- The app has two main functions. 
+The app has two main functions. 
 
 1. **Text categorization** - For categorizing a text message, enter the message in the `Enter to classify` field and push the `Classify Message` button. The selected text classifiers will appear below the under the Result text.
 
     - E.g. if you text "we are starving and are also lacking both drinking water and medicine" the categories "Related", "Aid Related" and "Water" will appear.
 
 2. **Training data distribution** - If you follow the link that says `Training data distribution` this will take you to a set of graphs showing the distribution.
-- The first graph shows the overall distribution of the type of texts used by the model, direct messages, news and social media inputs.
-- The second two graphs shows the distribtion of the direct messages, since these are the ones to be classified in the end.
-    - The first of these shows the distribution of languages used. This could be used further for classification modeling in the future.
-    - The second distribution shows how large a share of all messages that has had a positive observation in any of the categories.
+    
+    - **Overall distribution**
+        
+        The first graph shows the overall distribution of the type of texts used by the model, direct messages, news and social media inputs.
+
+    - **Direct message distribution**
+
+        The second two graphs shows the distribtion of the direct messages, since these are the ones to be classified in the end.
+        - The first of these shows the distribution of languages used. This could be used further for classification modeling in the future.
+        - The second distribution shows how large a share of all messages that has had a positive observation in any of the categories.
 
 ## Further development
 The results are still highly unbalanced and need further improvements too handle the many categories that are under represented.
